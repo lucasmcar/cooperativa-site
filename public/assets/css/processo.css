@@ -1,0 +1,44 @@
+/* ===== Paleta da cooperativa ===== */
+:root {
+    --verde-escuro: #0A3D2E;
+    --verde-medio: #1E6F50;
+    --verde-claro: #38A87D;
+    --cinza-texto: #555;
+    --branco: #fff;
+}
+
+/* Container geral */
+.processo-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* Título */
+.titulo-processo {
+    font-weight: 700;
+    color: var(--verde-escuro);
+}
+
+/* Imagem */
+.processo-img {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Texto */
+.detalhes-processo p {
+    line-height: 1.7;
+    color: var(--cinza-texto);
+    white-space: pre-line;
+}
+
+/* Destaques com ícones */
+.destaque-info {
+    font-size: 1rem;
+    color: var(--verde-escuro);
+    background: rgba(10, 61, 46, 0.08);
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+}

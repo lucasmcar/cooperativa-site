@@ -1,0 +1,50 @@
+/* ------------------- LISTAGEM DE NOTÍCIAS ------------------- */
+
+.noticia-card {
+    position: relative;
+    height: 280px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform .3s, box-shadow .3s;
+    background: var(--verde);
+}
+
+.noticia-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+}
+
+.noticia-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Overlay */
+.noticia-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
+    color: #fff;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Botão “Leia mais” */
+.btn-noticia {
+    background: var(--verde-escuro);
+    border: none;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: .85rem;
+    transition: .2s;
+}
+
+.btn-noticia:hover {
+    background: var(--verde);
+    color: #fff;
+}

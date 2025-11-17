@@ -1,0 +1,49 @@
+:root {
+    --verde-escuro: #0B522A;
+    --verde-medio: #0E6B34;
+    --amarelo: #F4D225;
+    --azul: #5C87A4;
+    --branco: #FFFFFF;
+}
+
+
+/* Container geral */
+.sobre-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Títulos */
+.titulo-principal {
+    color: var(--verde-escuro);
+    font-weight: 700;
+}
+
+.titulo-sub {
+    color: var(--verde-medio);
+    font-weight: 600;
+}
+
+/* Cards */
+.sobre-card {
+    border: 1px solid #e1e1e1;
+    border-radius: 14px;
+    transition: 0.3s ease;
+}
+
+.sobre-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--verde-claro);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.sobre-card .card-title {
+    color: var(--verde-medio);
+    font-weight: 600;
+}
+
+.sobre-card .card-text {
+    color: var(--cinza-texto);
+    text-align: justify;
+    line-height: 1.7;
+}
