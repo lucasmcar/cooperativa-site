@@ -1,33 +1,53 @@
-<section class="noticia-detalhe container py-5">
+<section class="noticia-detalhe container py-5 fade-in">
     <div class="row justify-content-center">
-        <div class="col-lg-8">
-            <div class="card shadow-lg border-0">
-                {% if !empty($noticia['imagem']) %}
-                    <img 
-                        src="/assets/imgs/thumbs/{{ $noticia['imagem'] }}" 
-                        class="card-img-top" 
-                        alt="{{ $noticia['titulo') }}"
-                        style="max-height: 400px; object-fit: cover;"
-                    >
-                {% endif; %}
+        <div class="col-lg-10">
 
-                <div class="card-body p-5">
-                    <h1 class="card-title display-5 fw-bold mb-4">{{ $noticia['titulo'] }}</h1>
-                    
-                    <p class="text-muted mb-4">
-                        <small>Publicado em: {{ $noticia['data'] ?? 'Data não informada' }} </small>
-                    </p>
+            <!-- Imagem da notícia -->
+            <div class="mb-4">
+                <img 
+                    src="{{ $noticia['detalhe']['imagem'] }}"
+                    class="img-fluid rounded shadow-sm w-100"
+                    alt="{{ $noticia['titulo'] }}"
+                >
+            </div>
 
-                    <div class="noticia-conteudo lead">
-                        {{ $noticia['conteudo'] ?? '<p>Conteúdo não disponível.</p>' }}
-                    </div>
+            <!-- Título -->
+            <h1 class="fw-bold mb-4 text-primary">{{ $noticia['detalhe']['titulo'] }}</h1>
 
-                    <hr class="my-5">
-                    <a href="/noticias" class="btn btn-secondary">
-                        Voltar às notícias
+            <!-- Conteúdo -->
+            <div class="noticia-text fs-5 lh-lg mb-5">
+                {{! $noticia['detalhe']['informacao'] }}
+            </div>
+
+            <!-- Compartilhamento -->
+            <div class="share-box mt-5">
+
+                <div class="share-buttons">
+
+                    <a href="#" class="share-btn whatsapp" data-share="whatsapp">
+                        <i class="bi bi-whatsapp"></i>
                     </a>
+
+                    <a href="#" class="share-btn facebook" data-share="facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="#" class="share-btn twitter" data-share="twitter">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+
+                    <a href="#" class="share-btn link" data-share="copy">
+                        <i class="bi bi-link-45deg"></i>
+                    </a>
+
                 </div>
             </div>
+
+            <!-- Voltar -->
+            <a href="/noticias" class="btn btn-outline-primary">
+                ← Voltar para Notícias
+            </a>
+
         </div>
     </div>
 </section>

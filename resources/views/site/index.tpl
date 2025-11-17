@@ -199,7 +199,7 @@
 
 
 <!-- PROJETOS -->
-<section class="projetos container">
+<!--<section class="projetos container">
   <h2 class="section-title text-center mb-4" style="color: var(--verde);">Projetos</h2>
 
   <div class="row g-4">
@@ -236,7 +236,7 @@
       </div>
     </div>
   </div>
-</section>
+</section>-->
 
 
 <!-- ARTIGOS -->
@@ -244,24 +244,6 @@
   <h2 class="section-title text-center" style="color: var(--verde);">Artigos</h2>
 
   <div class="row g-4">
-    <div class="col-md-3 col-6 artigo">
-      <img src="/assets/imgs/artigo1.jpg" class="img-fluid">
-      <h6>Inclusão Socioprodutiva</h6>
-    </div>
-
-    <div class="col-md-3 col-6 artigo">
-      <img src="/assets/imgs/artigo2.jpg" class="img-fluid">
-      <h6>Modelagem de Negócios</h6>
-    </div>
-
-    <div class="col-md-3 col-6 artigo">
-      <img src="/assets/imgs/artigo3.jpg" class="img-fluid">
-      <h6>Economia Popular</h6>
-    </div>
-
-    <div class="col-md-3 col-6 artigo">
-      <img src="/assets/imgs/artigo4.jpg" class="img-fluid">
-      <h6>Empreendedorismo Social</h6>
-    </div>
+    <span class="alert alert-info">Não há artigos ainda.</span>
   </div>
 </section>

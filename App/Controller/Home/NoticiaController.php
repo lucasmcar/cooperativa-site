@@ -28,6 +28,9 @@ class NoticiaController
 
     public function getNoticia($slug)
     {
+        // Converte array para string, se vier como array
+        $slug = is_array($slug) ? $slug[0] : $slug;
+
         $noticiasRepo = new NoticiasRepository();
         $noticia = $noticiasRepo->findBySlug($slug);
 
@@ -41,10 +44,14 @@ class NoticiaController
         ];
 
         return new View(
-            view: 'site/noticia-detalhe',
+            view: 'site/noticia',
             vars: $data,
-            styles: [],
-            scripts: []
+            styles: [
+                '/assets/css/noticia-detalhe.css'
+            ],
+            scripts: [
+                '/assets/js/share.js'
+            ]
         );
     }
 }
